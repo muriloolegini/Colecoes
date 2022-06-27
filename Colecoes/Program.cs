@@ -6,27 +6,86 @@ namespace Colecoes
     {
         public static void Main(string[] args)
         {
-            #region Ordenando Array
             OperacoesArray op = new OperacoesArray();
             int[] array = new int[5] { 6, 3, 8, 1, 9 };
             int[] arrayCopia = new int[10];
+            string[] arrayString = op.ConverterArrayParaString(array);
 
-            Console.WriteLine("Array original");
-            op.ImprimirArray(array);
+            //int valorProcurado = 8;
 
-         // op.OrdenarBubbleSort(ref array);
-            op.Ordener(ref array);
+            #region Metodo RedmensionarArray
+            Console.WriteLine($"Capacidade atual do array: {array.Length}");
+            op.RedmensionarArray(ref array, array.Length * 2);
+            Console.WriteLine($"Capacidade atual do array após redminsionado: {array.Length}");
+            #endregion
 
-            Console.WriteLine("Array ordenado");
-            op.ImprimirArray(array);
+            #region Metodo ObterIndice
+            //int indice = op.ObterIndice(array, valorProcurado);
+            //if (indice > - 1)
+            //{
+            //    Console.WriteLine("O índice do valor {0} é {1}", valorProcurado, indice);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Valor não existe no array");
+            //}
+            #endregion
 
-            Console.WriteLine("Array antes da cópia");
-            op.ImprimirArray(arrayCopia);
+            #region Metodo ObterValor
+            //int valorAchado = op.ObtreValor(array, valorProcurado);
+            //if (valorAchado > 0)
+            //{
+            //    Console.WriteLine("Encontrei o valor");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Não encontrei o valor");
+            //}
+            #endregion
 
-            Console.WriteLine("Array depois da cópia");
-            op.Copiar(ref array, ref arrayCopia);
+            #region Metodo TodosMaiorQue
+            //bool todosMaiorQue = op.TodosMaiorQue(array, valorProcurado);
+            //if (todosMaiorQue)
+            //{
+            //    Console.WriteLine("Todos os valores são maiores que {0}", valorProcurado);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Existe valores que não são maiores que {0}", valorProcurado);
+            //}
+            #endregion
 
-            op.ImprimirArray(arrayCopia);
+            #region  Metodo Existe
+            //bool existe = op.Existe(array, valorProcurado);
+            //if (existe)
+            //{
+            //    Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
+            //}
+            #endregion
+
+            #region Ordenar Array
+            //   Console.WriteLine("Array original");
+            //   op.ImprimirArray(array);
+
+            //   op.OrdenarBubbleSort(ref array);
+            //   op.Ordenar(ref array);
+
+            //   Console.WriteLine("Array ordenado");
+            //   op.ImprimirArray(array);
+            #endregion
+
+            #region Copiar Array
+            //   Console.WriteLine("Array antes da cópia");
+            //   op.ImprimirArray(arrayCopia);
+
+            //   Console.WriteLine("Array depois da cópia");
+            //   op.Copiar(ref array, ref arrayCopia);
+
+            //   op.ImprimirArray(arrayCopia);
             #endregion
 
             #region Matriz
