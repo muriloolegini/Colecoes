@@ -13,7 +13,8 @@
 <li>Encontrando o índice de um valor</li>
 <li>Redimensionando um Array</li>
 <li>Convertendo um Array</li>
-###-----------------------------------------------
+
+### Coleções genéricas
 <li>Declaranda e acessando uma lista</li>
 <li>Removendo elemento da lista</li>
 <li>Adicionando coleções na lista</li>
