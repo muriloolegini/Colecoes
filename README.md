@@ -4,9 +4,7 @@
 <li>Criando e percorrendo um Array</li>
 <li>Acessando um Array de forma segura</li>
 <li>Array multidimensional</li>
-<li>Algoritmos de ordenação</li>
 <li>Ordenando via bubble sort</li>
-<li>A classe Array</li>
 <li>Ordenando pela classe Array</li>
 <li>Copiando um Array</li>
 <li>Verificando um elemennto existente</li>
