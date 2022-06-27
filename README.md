@@ -1,5 +1,5 @@
 # Colecoes
-### Fundamentos de Coleções e LINQ com .NET
+## Fundamentos de Coleções e LINQ com .NET
 
 <li>Criando e percorrendo um Array</li>
 <li>Acessando um Array de forma segura</li>
@@ -13,3 +13,8 @@
 <li>Encontrando o índice de um valor</li>
 <li>Redimensionando um Array</li>
 <li>Convertendo um Array</li>
+###-----------------------------------------------
+<li>Declaranda e acessando uma lista</li>
+<li>Removendo elemento da lista</li>
+<li>Adicionando coleções na lista</li>
+<li>Adicionando elemento por índice</li>
