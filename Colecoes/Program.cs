@@ -6,17 +6,35 @@ namespace Colecoes
     {
         public static void Main(string[] args)
         {
-            OperacoesArray op = new OperacoesArray();
+            OperacoesLista opLista = new OperacoesLista();
+            List<string> estados = new List<string> { "SP", "MG", "BA" };
+            string[] estadosArray = new string[2] { "SC", "MT" };
+
+
+            Console.WriteLine($"Quantidade de elementos na lista. {estados.Count}");
+            opLista.ImprimirListaString(estados);
+
+            //Console.WriteLine("Removendo o elemento");
+            //estados.Remove("MG");
+            //estados.AddRange(estadosArray);
+
+            Console.WriteLine();
+
+            estados.Insert(1, "RJ");
+            opLista.ImprimirListaString(estados);
+
+
+         /* OperacoesArray op = new OperacoesArray();
             int[] array = new int[5] { 6, 3, 8, 1, 9 };
             int[] arrayCopia = new int[10];
             string[] arrayString = op.ConverterArrayParaString(array);
 
-            //int valorProcurado = 8;
+            int valorProcurado = 8; */
 
             #region Metodo RedmensionarArray
-            Console.WriteLine($"Capacidade atual do array: {array.Length}");
-            op.RedmensionarArray(ref array, array.Length * 2);
-            Console.WriteLine($"Capacidade atual do array após redminsionado: {array.Length}");
+            //Console.WriteLine($"Capacidade atual do array: {array.Length}");
+            //op.RedmensionarArray(ref array, array.Length * 2);
+            //Console.WriteLine($"Capacidade atual do array após redminsionado: {array.Length}");
             #endregion
 
             #region Metodo ObterIndice
