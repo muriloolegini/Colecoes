@@ -6,30 +6,66 @@ namespace Colecoes
     {
         public static void Main(string[] args)
         {
-            OperacoesLista opLista = new OperacoesLista();
-            List<string> estados = new List<string> { "SP", "MG", "BA" };
-            string[] estadosArray = new string[2] { "SC", "MT" };
+            //OperacoesLista opLista = new OperacoesLista();
+            //List<string> estados = new List<string> { "SP", "MG", "BA" };
+            //string[] estadosArray = new string[2] { "SC", "MT" };
 
 
-            Console.WriteLine($"Quantidade de elementos na lista. {estados.Count}");
-            opLista.ImprimirListaString(estados);
+            //Console.WriteLine($"Quantidade de elementos na lista. {estados.Count}");
+            //opLista.ImprimirListaString(estados);
 
             //Console.WriteLine("Removendo o elemento");
             //estados.Remove("MG");
             //estados.AddRange(estadosArray);
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            estados.Insert(1, "RJ");
-            opLista.ImprimirListaString(estados);
+            //estados.Insert(1, "RJ");
+            //opLista.ImprimirListaString(estados);
 
 
-         /* OperacoesArray op = new OperacoesArray();
-            int[] array = new int[5] { 6, 3, 8, 1, 9 };
-            int[] arrayCopia = new int[10];
-            string[] arrayString = op.ConverterArrayParaString(array);
+            /* OperacoesArray op = new OperacoesArray();
+               int[] array = new int[5] { 6, 3, 8, 1, 9 };
+               int[] arrayCopia = new int[10];
+               string[] arrayString = op.ConverterArrayParaString(array);
 
-            int valorProcurado = 8; */
+               int valorProcurado = 8; */
+
+            #region Pilha
+            //Stack<string> pilhaLivros = new Stack<string>();
+
+            //pilhaLivros.Push(".NET");
+            //pilhaLivros.Push("DDD");
+            //pilhaLivros.Push("PYTHON");
+
+            //Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
+
+            //while (pilhaLivros.Count > 0)
+            //{
+            //    Console.WriteLine($"Próximo livro: {pilhaLivros.Peek()}");
+            //    Console.WriteLine($"{pilhaLivros.Pop()} livro lido com sucesso");
+            //}
+
+            //Console.WriteLine($"Livros para leitura: {pilhaLivros.Count}");
+            #endregion
+
+            #region Fila
+            //Queue<string> fila = new Queue<string>();
+
+            //fila.Enqueue("Murilo");
+            //fila.Enqueue("Thaís");
+            //fila.Enqueue("Carlos");
+
+            //Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+            //while (fila.Count > 0)
+            //{
+            //    Console.WriteLine($"Vez de: {fila.Peek()}");
+            //    Console.WriteLine($"{fila.Dequeue()} atendido(a)!");
+            //}
+
+            //Console.WriteLine($"Pessoas na fila: {fila.Count}");
+            #endregion
 
             #region Metodo RedmensionarArray
             //Console.WriteLine($"Capacidade atual do array: {array.Length}");
