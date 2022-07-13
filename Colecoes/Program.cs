@@ -6,6 +6,43 @@ namespace Colecoes
     {
         public static void Main(string[] args)
         {
+            Dictionary<string, string> estados = new Dictionary<string, string>();
+            estados.Add("MG", "Uberlândia");
+            estados.Add("MT", "Cuiabá");
+            estados.Add("SP", "Campinas");
+
+            foreach (KeyValuePair<string, string> item in estados)
+            {
+                Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            }
+
+            string valorProcurado = "SP";
+
+            if (estados.TryGetValue(valorProcurado, out string estadoEncontrado))
+            {
+                Console.WriteLine(estadoEncontrado);
+            }
+            else
+            {
+                Console.WriteLine($"A chave {valorProcurado} não existe no dicionário.");
+            }
+
+            //Console.WriteLine($"Removendo o valor: {valorProcurado}");
+            //estados.Remove(valorProcurado);
+
+            //foreach (KeyValuePair<string, string> item in estados)
+            //{
+            //    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+            //}
+
+            //Console.WriteLine("Valor original:");
+            //Console.WriteLine(estados[valorProcurado]);
+
+            //estados[valorProcurado] = "MG - Uberlândia";
+
+            //Console.WriteLine("Valor atualizado:");
+            //Console.WriteLine(estados[valorProcurado]);
+
             //OperacoesLista opLista = new OperacoesLista();
             //List<string> estados = new List<string> { "SP", "MG", "BA" };
             //string[] estadosArray = new string[2] { "SC", "MT" };
